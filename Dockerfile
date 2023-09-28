@@ -1,8 +1,5 @@
-mkdir /opt/docker
+From tomcat:8-jre8 
 
-### vi Dockerfile
-# Pull base image 
-From tomcat:9.0.80-jdk8-corretto-al2  
-
-# copy war file on to container 
+# Maintainer 
+MAINTAINER "atcrest1@gmail.com" 
 COPY ./webapp.war /usr/local/tomcat/webapps
