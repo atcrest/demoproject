@@ -1,14 +1,14 @@
 ---
- - hosts: web-servers
+ - hosts: webservers
    become: true
 
    tasks:
      - name: stop previous version docker
-       shell: docker stop valaxy_demo
+       shell: docker stop karan_demo
      - name: remove stopped container
-       shell: docker rm -f valaxy_demo	  
+       shell: docker rm -f karan_demo	  
      - name: remove docker images
-       shell: docker image rm -f valaxy/valaxy_demo
+       shell: docker image rm -f atcrest1/demo
        
      - name: create docker image
-       shell: docker run -d --name valaxy_demo -p 8090:8080 valaxy/valaxy_demo
+       shell: docker run -d --name karan_demo -p 8090:8080 atcrest1/demo
