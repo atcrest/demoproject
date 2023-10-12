@@ -1,3 +1,3 @@
-# maven-project
+# CAPSTONE PROJECT
 
-Simple Maven Project
+This is a project to be submitted to WIPRO DEVOPS TEAM
